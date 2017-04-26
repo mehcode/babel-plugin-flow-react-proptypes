@@ -90,7 +90,7 @@ module.exports = function flowReactPropTypes(babel) {
     }
 
     if (!props) {
-      throw new Error(`Did not find type annotation for ${name}`);
+      console.warn(`Did not find type annotation for ${name}`);
     }
 
     if (!props.properties) {
